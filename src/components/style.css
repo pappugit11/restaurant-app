@@ -1,0 +1,110 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    background-color: #2f3338;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+:root{
+    --theme-color: #376e6f;
+    --theme-color2: #0ec0c3;
+}
+/* custom css */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:  0;
+}
+.container{
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.navbar_wrapper{
+    padding: 20px 0;
+}
+.navbar_list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar_nav ul li{
+    padding: 0 10px;
+}
+.navbar_nav ul li button {
+    padding: 15px 24px;
+    border-radius: 0;
+    border: 0;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    cursor: pointer;
+    background: var(--theme-color);
+    color: #e9e9e9;
+    transition: all .3s ease-in-out;
+}
+.navbar_nav ul li button:hover {
+    background: #e9e9e9 !important;
+    color: var(--theme-color);
+}
+.cards_container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px -30px;
+    
+}
+.cards_outer{
+    width: 33.33%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+.cards{
+    border: 1px solid #8a8a8a;
+    padding: 20px;
+    border-radius: 0;
+}
+.cards .card_img{
+    margin-bottom: 20px;
+
+}
+.cards .card_img img{
+    width: 100%;
+}
+.cards .catg{
+    margin-bottom: 20px;
+    color: #f1f1f1;
+    text-transform: capitalize;
+}
+.cards .card_title{
+    font-size: 24px;
+    text-transform: capitalize;
+    color: var(--theme-color2);
+    margin-bottom: 15px;
+}
+.cards .card_num{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid var(--theme-color2);
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: var(--theme-color2);
+}
+.cards .card_link{
+    color: var(--theme-color2);
+    transition: all .3s ease-in-out;
+    text-decoration: none;
+}
+.cards .card_link:hover{
+    color: var(--theme-color);
+}
